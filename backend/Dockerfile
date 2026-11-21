@@ -10,11 +10,15 @@ RUN apt-get update -qq && \
         curl && \
     rm -rf /var/lib/apt/lists/*
 
-COPY Gemfile* ./    
+COPY Gemfile* ./
 
 RUN bundle install
 
 COPY . ./
+
+COPY entrypoint.sh /usr/bin/
+RUN chmod +x /usr/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
 
 EXPOSE 3000
 
