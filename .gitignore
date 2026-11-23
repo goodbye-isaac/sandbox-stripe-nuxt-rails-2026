@@ -1,0 +1,50 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+.ruby-lsp/
+
+# Environment and Secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Rails (Backend)
+/backend/log/*
+!/backend/log/.keep
+/backend/tmp/*
+!/backend/tmp/.keep
+!/backend/tmp/pids/
+!/backend/tmp/pids/.keep
+!/backend/tmp/storage/
+!/backend/tmp/storage/.keep
+/backend/storage/*
+!/backend/storage/.keep
+/backend/public/assets
+/backend/public/packs
+/backend/public/packs-test
+/backend/config/master.key
+/backend/config/credentials/*.key
+
+# Nuxt / Node.js (Frontend)
+/frontend/node_modules/
+/frontend/.nuxt/
+/frontend/.output/
+/frontend/dist/
+/frontend/.nitro/
+/frontend/.cache/
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/.pnpm-debug.log*
